@@ -11,11 +11,16 @@ You should have received a copy of the GNU General Public License along with thi
 import com.pi4j.io.gpio.*;
 import com.pi4j.io.gpio.event.*;
 import com.pi4j.io.gpio.trigger.*;
-public class RasPi_Runner
+public class RasPi_Runner extends InterruptedException
 {
     public static void main(String args[])
     {
-       System.out.println("Welcome, \nPlease hit any button and predict the result!");
-
+        // Declaring class required for constructor
+       new RasPi_Runner();
+    }
+    // Constructor making it easier to implement other classes
+    public RasPi_Runner()
+    {
+        System.out.println("Welcome, \nPlease hit any button and predict the result!");
     }
 }
