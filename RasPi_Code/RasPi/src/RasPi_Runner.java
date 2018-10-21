@@ -7,10 +7,15 @@ This program is distributed in the hope that it will be useful but WITHOUT ANY W
 
 You should have received a copy of the GNU General Public License along with this program. If not, see https://www.gnu.org/licenses/.
 */
+// imports required to run on raspberry pi, won't run on standard windows or linux based system
+import com.pi4j.io.gpio.*;
+import com.pi4j.io.gpio.event.*;
+import com.pi4j.io.gpio.trigger.*;
 public class RasPi_Runner
 {
     public static void main(String args[])
     {
-        System.out.println("Hello World");
+       System.out.println("Welcome, \nPlease hit any button and predict the result!");
+
     }
 }
