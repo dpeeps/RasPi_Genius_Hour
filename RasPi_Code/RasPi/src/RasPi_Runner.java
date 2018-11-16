@@ -11,6 +11,7 @@ You should have received a copy of the GNU General Public License along with thi
 import com.pi4j.io.gpio.*;
 import com.pi4j.io.gpio.event.*;
 import com.pi4j.io.gpio.trigger.*;
+import ATM.java;
 public class RasPi_Runner extends InterruptedException
 {
     public static void main(String args[])
@@ -21,6 +22,10 @@ public class RasPi_Runner extends InterruptedException
     // Constructor making it easier to implement other classes
     public RasPi_Runner()
     {
-        System.out.println("Welcome, \nPlease hit any button and predict the result!");
+        System.out.println("<ATM.java & RasPi_Runner.java>  Copyright (C) <2018>  <David Pieper>
+        This program comes with ABSOLUTELY NO WARRANTY;\n
+        This is free software, and you are welcome to redistribute it
+        under certain conditions;")
+        new ATM();   
     }
 }
